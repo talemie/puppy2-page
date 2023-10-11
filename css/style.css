@@ -1,0 +1,98 @@
+/* default css rules */
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
+
+/* -------------Mobile first approach--------- */
+/* header start */
+.blue-back {
+	background-color: #085070;
+	color: white;
+	text-align: center;
+}
+.blue-back h1 {
+	padding: 10px 0;
+}
+/* header end */
+/* banner start */
+.banner img {
+	width: 100%;
+}
+/* banner end */
+/* puppies sec start */
+.puppies-wrapper {
+	width: 90%;
+	margin: 2% auto;
+}
+.puppies-wrapper img {
+	width: 100%;
+}
+.missing-puppy-wrapper {
+	display: none;
+}
+.puppies-wrapper > div {
+	margin: 4% 0;
+}
+/* puppies sec end */
+/* more puppies sec start*/
+.more-puppies-wrapper h2 {
+	text-align: center;
+	font-size: 40px;
+}
+/* more puppies sec end*/
+/* footer start */
+.blue-back h2 {
+	padding: 20px 0 40px;
+	font-size: 35px;
+	font-family: 'Lugrasimo', cursive;
+}
+/***********************************/
+/* Media Query: 1st Break point - Tablet*/
+/***********************************/
+@media (min-width: 721px) {
+	.puppies-wrapper {
+		display: flex;
+		margin: 0 auto;
+		/* justify-content: center; */
+		/* flex-wrap: wrap; */
+	}
+	.puppies-wrapper > div {
+		width: 48.5%;
+		margin: 1%;
+	}
+	.puppies-section .puppies-wrapper img {
+		height: 100%;
+	}
+}
+/***********************************/
+/* Media Query: 2nd Break point -laptop*/
+/***********************************/
+@media (min-width: 961px) {	
+	.missing-puppy-wrapper {
+		display: block;
+		background-color: #ee4d65;
+	}
+	.missing-puppy-wrapper p {
+		padding: 55px;
+		font-size: 5vw;
+		text-align: center;
+	}
+	.puppies-section .puppies-wrapper > div {
+		width: 32%;
+	}
+}
+/***********************************/
+/* Media Query: 3rd Break point fixing missing puppy section text*/
+/***********************************/
+@media(min-width:1500px){
+	.puppies-wrapper{
+		width: 1450px;
+	}
+	.missing-puppy-wrapper p {
+		font-size: 80px;
+	}
+}
